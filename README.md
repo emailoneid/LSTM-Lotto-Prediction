@@ -8,6 +8,7 @@ The historical **1162 **lottery data is stored in a CSV file named `lotto_data.c
 
 | Column Name | Description |
 |-------------|------------|
+| **Date**    | Date |
 | **Num1**    | First drawn number |
 | **Num2**    | Second drawn number |
 | **Num3**    | Third drawn number |
@@ -15,9 +16,11 @@ The historical **1162 **lottery data is stored in a CSV file named `lotto_data.c
 | **Num5**    | Fifth drawn number |
 | **Num6**    | Sixth drawn number |
 | **BnusNo**  | Bonus number |
+| **Total Selling**  | Total Selling |
+
 
 ### Data Processing
-1. Extract the first 8 columns from the CSV.
+1. Extract columns from the CSV.
 2. Rename columns for consistency.
 3. Sort the numbers in each row in ascending order to standardize the dataset.
 
