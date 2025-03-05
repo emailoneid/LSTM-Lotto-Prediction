@@ -4,7 +4,7 @@
 This project utilizes a Long Short-Term Memory (LSTM) neural network to predict the next set of lottery numbers based on historical data. The model is trained on past winning numbers and attempts to identify patterns to forecast future results.
 
 ## Dataset Structure
-The historical **1162 **lottery data is stored in a CSV file named `lotto_data.csv`. Each row represents a past lottery draw, with columns for the drawn numbers. The dataset structure is as follows:
+The historical **1162** lottery data is stored in a CSV file named `lotto_data.csv`. Each row represents a past lottery draw, with columns for the drawn numbers. The dataset structure is as follows:
 
 | Column Name | Description |
 |-------------|------------|
