@@ -55,4 +55,4 @@ def getLottoWinInfo(minDrwNo, maxDrwNo):
     return df_lotto
 
 
-lotto_df = getLottoWinInfo(1, 1161)
+lotto_df = getLottoWinInfo(1, 1162)
