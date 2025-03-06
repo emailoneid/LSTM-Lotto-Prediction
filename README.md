@@ -43,7 +43,7 @@ The model is built using TensorFlow's `Sequential` API with LSTM layers:
 The model is compiled with the **Adam** optimizer and **Mean Squared Error (MSE)** loss function.
 
 ## Training
-- The model is trained for **20 epochs** with a batch size of **16**.
+- The model is trained for **20 epochs** with a batch size of **32**.
 - Validation data is used to monitor performance.
 
 ## Prediction
@@ -53,6 +53,6 @@ The model is compiled with the **Adam** optimizer and **Mean Squared Error (MSE)
 
 **The predicted next lottery numbers will be printed in the console:**
 ```
-Predicted Next Lottery Numbers: [12 23 34 45 50 5 9]
+Predicted Next Lottery Numbers: [1 13 14 26 27 45 9]
 ```
 
