@@ -16,9 +16,6 @@ df = df.iloc[:, 1:8]
 # Rename columns
 df.columns = ['Num1', 'Num2', 'Num3', 'Num4', 'Num5', 'Num6', 'BnusNo']
 
-# Sort
-df[:] = np.sort(df.values, axis=1)
-
 # Convert to NumPy array
 data = df.values
 
@@ -35,7 +32,7 @@ for i in range(sequence_length, len(data_scaled)):
     y.append(data_scaled[i])  # The next set to predict
 
 # Convert to numpy arrays
-X, y = np.array(X, dtype=np.float32), np.array(y, dtype=np.float32)
+X, y = np.array(X), np.array(y)
 
 # Split into training and validation sets
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -51,7 +48,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='mse')
 
 # Train the model
-history = model.fit(X_train, y_train, epochs=20, batch_size=16, validation_data=(X_val, y_val))
+history = model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_val, y_val))
 
 # Make prediction for the next set
 last_sequence = X[-1].reshape(1, X.shape[1], X.shape[2])
